@@ -1,0 +1,4 @@
+vsftpd_conf=Primary VSFTPd configuration file,0
+vsftpd_dir=VSFTPd configuration directory,0
+vsftpd_template=Template VSFTPd configuration file,3,Primary config
+apply_cmd=Command to apply VSFTPd configuration,0

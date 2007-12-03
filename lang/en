@@ -1,0 +1,27 @@
+feat_name=VSFTPd
+feat_losing=The VSFTPd server will be disabled for this domain
+feat_disname=VSFTPd
+feat_label=Enable VSFTPd virtual server?
+feat_econf=The VSFTPd configuration file $1 does not exist
+feat_edir=The VSFTPd configuration directory $1 does not exist
+feat_edepvirt=VSFTPd cannot be enabled for servers that do not have a private IP address
+feat_clash=A VSFTPd configuration file already exists for this virtual server
+feat_elisten=Your VSFTPd server is not configured to run in stand-alone server mode (via the listen=YES directive)
+feat_eaddress=Your VSFTPd server's primary configuration is not setup to listen on only a single IP address (via the listen_address=x.x.x.x directive). This is needed to prevent it from clashing with the virtual FTP servers setup by Virtualmin
+feat_eproftpd=VSFTPd cannot be used at the same time as Virtualmin's built-in ProFTPd feature
+feat_backup=Backing up VSFTPd configuration file ..
+feat_nofile=.. no configuration file found!
+feat_restore=Restoring VSFTPd configuration file ..
+feat_nocopy=.. copy failed!
+feat_backup_name=VSFTPd configuration file
+feat_evalidate=VSFTPd configuration file $1 is missing
+feat_evalidateftp=Anonymous FTP directory $1 does not exist
+
+setup_add=Adding VSFTPd virtual server ..
+
+save_dom=Renaming VSFTPd configuration file ..
+save_ip=Updating IP address in VSFTPd configuration file ..
+save_home=Updating home directory in VSFTPd configuration file ..
+
+delete_del=Deleting VSFTPd virtual server ..
+delete_gone=.. could not find configuration file!
