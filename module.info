@@ -3,3 +3,4 @@ depends=virtual-server/2.25 1.240
 os_support=redhat-linux mandrake-linux
 hidden=1
 version=1.4
+feedback=jcameron@webmin.com
