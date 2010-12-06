@@ -25,3 +25,4 @@ save_home=Updating home directory in VSFTPd configuration file ..
 
 delete_del=Deleting VSFTPd virtual server ..
 delete_gone=.. could not find configuration file!
+__norefs=1
