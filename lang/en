@@ -2,6 +2,7 @@ feat_name=VSFTPd
 feat_losing=The VSFTPd server will be disabled for this domain
 feat_disname=VSFTPd
 feat_label=Enable VSFTPd virtual server?
+feat_label2=VSFTPd virtual server
 feat_econf=The VSFTPd configuration file $1 does not exist
 feat_edir=The VSFTPd configuration directory $1 does not exist
 feat_edepvirt=VSFTPd cannot be enabled for servers that do not have a private IP address
