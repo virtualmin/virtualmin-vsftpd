@@ -75,12 +75,13 @@ sub feature_depends
 return $_[0]->{'virt'} ? undef : $text{'feat_edepvirt'};
 }
 
-# feature_clash(&domain)
+# feature_clash(&domain, [field])
 # Returns undef if there is no clash for this domain for this feature, or
 # an error message if so
 sub feature_clash
 {
-if (!$_[1] || $_[1] eq 'dom') {
+local ($d, $field) = @_;
+if (!$field || $field eq 'dom') {
 	local ($d) = @_;
 	local $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
 	return $text{'feat_clash'} if (-r $cfile);
