@@ -1,6 +1,6 @@
 desc=VSFTPd Feature for Virtualmin
-depends=virtual-server/2.25 1.240
+depends=virtual-server/4.13 1.240
 os_support=redhat-linux mandrake-linux
 hidden=1
-version=1.5
+version=1.6
 feedback=jcameron@webmin.com
