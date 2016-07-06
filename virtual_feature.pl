@@ -1,4 +1,7 @@
 # Defines functions for this feature
+use strict;
+use warnings;
+our (%text, %config);
 
 require 'virtualmin-vsftpd-lib.pl';
 
@@ -28,7 +31,7 @@ return $text{'feat_disname'};
 # editing form
 sub feature_label
 {
-local ($edit) = @_;
+my ($edit) = @_;
 return $edit ? $text{'feat_label2'} : $text{'feat_label'};
 }
 
@@ -46,8 +49,8 @@ elsif (!-d $config{'vsftpd_dir'}) {
 	}
 
 # Make sure vsftpd is setup
-local $lref = &read_file_lines($config{'vsftpd_conf'});
-local ($gotlisten, $gotaddress);
+my $lref = &read_file_lines($config{'vsftpd_conf'});
+my ($gotlisten, $gotaddress);
 foreach my $l (@$lref) {
 	$gotlisten = 1 if ($l =~ /^\s*listen\s*=\s*YES/i);
 	$gotaddress = $1 if ($l =~ /^\s*listen_address\s*=\s*(\S+)/i);
@@ -60,9 +63,11 @@ elsif (!$gotaddress) {
 	}
 
 # Cannot also run proftpd
+no warnings "once";
 if ($virtual_server::config{'ftp'}) {
 	return $text{'feat_eproftpd'};
 	}
+use warnings "once";
 
 return undef;
 }
@@ -80,10 +85,10 @@ return $_[0]->{'virt'} ? undef : $text{'feat_edepvirt'};
 # an error message if so
 sub feature_clash
 {
-local ($d, $field) = @_;
+my ($d, $field) = @_;
 if (!$field || $field eq 'dom') {
-	local ($d) = @_;
-	local $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
+	my ($d) = @_;
+	my $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
 	return $text{'feat_clash'} if (-r $cfile);
 	}
 return undef;
@@ -101,18 +106,18 @@ return !$_[1];	# not for alias domains
 # Called when this feature is added, with the domain object as a parameter
 sub feature_setup
 {
-local ($d) = @_;
+my ($d) = @_;
 
 # Copy the main vsftpd config file, and update it's IP
 &$virtual_server::first_print($text{'setup_add'});
 
-local $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
-local $data;
+my $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
+my $data;
 
 # Create directory for FTP root
-local $tmpl = &virtual_server::get_template($d->{'template'});
-local ($fdir) = ($tmpl->{'ftp_dir'} || 'ftp');
-local $ftp = "$_[0]->{'home'}/$fdir";
+my $tmpl = &virtual_server::get_template($d->{'template'});
+my ($fdir) = ($tmpl->{'ftp_dir'} || 'ftp');
+my $ftp = "$_[0]->{'home'}/$fdir";
 if (!-d $ftp) {
         &system_logged("mkdir '$ftp' 2>/dev/null");
         &system_logged("chmod 755 '$ftp'");
@@ -120,7 +125,7 @@ if (!-d $ftp) {
         }
 
 # Work out where the log file goes
-local $logfile = "$d->{'home'}/logs/ftp.log";
+my $logfile = "$d->{'home'}/logs/ftp.log";
 
 if ($config{'vsftpd_template'}) {
 	# Use and substitute template
@@ -128,16 +133,18 @@ if ($config{'vsftpd_template'}) {
 	$data = &substitute_template($data, $d);
 
 	# Write out config
+	no strict "subs";
 	&open_lock_tempfile(CONF, ">$cfile");
 	&print_tempfile(CONF, $data);
 	&close_tempfile(CONF);
+	use strict"subs";
 	}
 else {
 	# Use main config, with changes
 	&lock_file($cfile);
 	&copy_source_dest($config{'vsftpd_conf'}, $cfile);
-	local $lref = &read_file_lines($cfile);
-	local ($gotbanner, $gotroot, $gotlog);
+	my $lref = &read_file_lines($cfile);
+	my ($gotbanner, $gotroot, $gotlog);
 	foreach my $l (@$lref) {
 		if ($l =~ /^\s*listen_address\s*=/) {
 			$l = "listen_address=$d->{'ip'}";
@@ -178,16 +185,16 @@ else {
 # Called when a domain with this feature is modified
 sub feature_modify
 {
-local ($d, $oldd) = @_;
-local $restart = 0;
-local $ocfile = "$config{'vsftpd_dir'}/vsftpd.$oldd->{'dom'}.conf";
-local $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
+my ($d, $oldd) = @_;
+my $restart = 0;
+my $ocfile = "$config{'vsftpd_dir'}/vsftpd.$oldd->{'dom'}.conf";
+my $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
 if ($d->{'dom'} ne $oldd->{'dom'}) {
 	# Need to rename file and update domain
 	&$virtual_server::first_print($text{'save_dom'});
 	&rename_logged($ocfile, $cfile);
 	&lock_file($cfile);
-	local $lref = &read_file_lines($cfile);
+	my $lref = &read_file_lines($cfile);
 	foreach my $l (@$lref) {
 		if ($l =~ /^ftpd_banner\s*=/) {
 			$l =~ s/\Q$oldd->{'dom'}\E/$d->{'dom'}/g;
@@ -202,7 +209,7 @@ if ($d->{'ip'} ne $oldd->{'ip'}) {
 	# Need to update IP address
 	&$virtual_server::first_print($text{'save_ip'});
 	&lock_file($cfile);
-	local $lref = &read_file_lines($cfile);
+	my $lref = &read_file_lines($cfile);
 	foreach my $l (@$lref) {
 		$l =~ s/listen_address\s*=\s*(\S+)/listen_address=$d->{'ip'}/g;
 		}
@@ -215,7 +222,7 @@ if ($d->{'home'} ne $oldd->{'home'}) {
 	# Need to update home directory
 	&$virtual_server::first_print($text{'save_home'});
 	&lock_file($cfile);
-	local $lref = &read_file_lines($cfile);
+	my $lref = &read_file_lines($cfile);
 	foreach my $l (@$lref) {
 		if ($l =~ /^(auto_home|xferlog_file)\s*=/) {
 			$l =~ s/\Q$oldd->{'home'}\E/$d->{'home'}/g;
@@ -236,9 +243,9 @@ if ($restart) {
 # Called when this feature is disabled, or when the domain is being deleted
 sub feature_delete
 {
-local ($d) = @_;
+my ($d) = @_;
 &$virtual_server::first_print($text{'delete_del'});
-local $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
+my $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
 if (-r $cfile) {
 	&unlink_logged($cfile);
 	&system_logged("$config{'apply_cmd'} >/dev/null 2>&1 </dev/null");
@@ -255,9 +262,10 @@ else {
 sub feature_bandwidth
 {
 # Use the per-domain vsftpd log file
-local ($d, $start, $hash) = @_;
-local $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
-local $lref = &read_file_lines($cfile);
+my ($d, $start, $hash) = @_;
+my $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
+my $lref = &read_file_lines($cfile);
+my $log;
 foreach my $l (@$lref) {
 	if ($l =~ /^xferlog_file\s*=\s*(.*)/) {
 		$log = $1;
@@ -280,8 +288,8 @@ return ( );
 # or 0 if not
 sub feature_import
 {
-local ($dname, $user, $db) = @_;
-local $cfile = "$config{'vsftpd_dir'}/vsftpd.$dname.conf";
+my ($dname, $user, $db) = @_;
+my $cfile = "$config{'vsftpd_dir'}/vsftpd.$dname.conf";
 return -r $cfile;
 }
 
@@ -289,9 +297,9 @@ return -r $cfile;
 # Copy the VSftpd config file for the domain
 sub feature_backup
 {
-local ($d, $file, $opts) = @_;
+my ($d, $file, $opts) = @_;
 &$virtual_server::first_print($text{'feat_backup'});
-local $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
+my $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
 if (-r $cfile) {
 	&virtual_server::copy_write_as_domain_user($d, $cfile, $file);
 	&$virtual_server::second_print($virtual_server::text{'setup_done'});
@@ -307,9 +315,9 @@ else {
 # Called to restore this feature for the domain from the given file
 sub feature_restore
 {
-local ($d, $file, $opts) = @_;
+my ($d, $file, $opts) = @_;
 &$virtual_server::first_print($text{'feat_restore'});
-local $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
+my $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
 &lock_file($cfile);
 if (&copy_source_dest($file, $cfile)) {
 	&unlock_file($cfile);
@@ -333,15 +341,14 @@ return $text{'feat_backup_name'};
 # an error message if any problem is found
 sub feature_validate
 {
-local ($d) = @_;
-local $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
+my ($d) = @_;
+my $cfile = "$config{'vsftpd_dir'}/vsftpd.$d->{'dom'}.conf";
 -r $cfile || return &text('feat_evalidate', "<tt>$cfile</tt>");
-local $tmpl = &virtual_server::get_template($d->{'template'});
-local ($fdir) = ($tmpl->{'ftp_dir'} || 'ftp');
-local $ftp = "$_[0]->{'home'}/$fdir";
+my $tmpl = &virtual_server::get_template($d->{'template'});
+my ($fdir) = ($tmpl->{'ftp_dir'} || 'ftp');
+my $ftp = "$_[0]->{'home'}/$fdir";
 -d $ftp || return &text('feat_evalidateftp', "<tt>$ftp</tt>");
 return undef;
 }
 
 1;
-
