@@ -1,0 +1,25 @@
+feat_name=vsftpd
+feat_losing=เซิร์ฟเวอร์ VSFTPd จะถูกปิดการใช้งานสำหรับโดเมนนี้
+feat_disname=vsftpd
+feat_label=เปิดใช้งานเซิร์ฟเวอร์เสมือน VSFTPd หรือไม่
+feat_label2=VSFTPd เซิร์ฟเวอร์เสมือน
+feat_econf=ไฟล์การกำหนดค่า VSFTPd $1 ไม่มีอยู่
+feat_edir=ไดเรกทอรีการกำหนดค่า VSFTPd $1 ไม่มีอยู่
+feat_edepvirt=VSFTPd ไม่สามารถเปิดใช้งานสำหรับเซิร์ฟเวอร์ที่ไม่มีที่อยู่ IP ส่วนตัว
+feat_clash=ไฟล์การกำหนดค่า VSFTPd มีอยู่แล้วสำหรับเซิร์ฟเวอร์เสมือนนี้
+feat_elisten=เซิร์ฟเวอร์ VSFTPd ของคุณไม่ได้กำหนดค่าให้ทำงานในโหมดเซิร์ฟเวอร์แบบสแตนด์อโลน (ผ่านคำสั่ง Listen <tt>listen=YES</tt> )
+feat_eaddress=การกำหนดค่าหลักของเซิร์ฟเวอร์ VSFTPd ของคุณไม่ได้ตั้งค่าให้ฟังเฉพาะที่อยู่ IP เดียว (ผ่านทาง <tt>listen_address=xxxx</tt> directive) สิ่งนี้จำเป็นสำหรับการป้องกันไม่ให้กระทบกับการตั้งค่าเซิร์ฟเวอร์ FTP เสมือนโดย Virtualmin
+feat_eproftpd=VSFTPd ไม่สามารถใช้พร้อมกันกับคุณสมบัติ ProFTPd ในตัวของ Virtualmin
+feat_backup=การสำรองไฟล์การกำหนดค่า VSFTPd ..
+feat_nofile=.. ไม่พบไฟล์กำหนดค่า!
+feat_restore=การกู้คืนไฟล์กำหนดค่า VSFTPd
+feat_nocopy=.. การคัดลอกล้มเหลว!
+feat_backup_name=ไฟล์การกำหนดค่า VSFTPd
+feat_evalidate=ไฟล์การกำหนดค่า VSFTPd $1 หายไป
+feat_evalidateftp=ไม่มีไดเรกทอรี FTP ที่ไม่ระบุชื่อ $1 
+setup_add=การเพิ่มเซิร์ฟเวอร์เสมือน VSFTPd
+save_dom=การเปลี่ยนชื่อไฟล์การกำหนดค่า VSFTPd ..
+save_ip=การอัพเดตที่อยู่ IP ในไฟล์การกำหนดค่า VSFTPd
+save_home=การอัพเดตโฮมไดเร็กทอรีในไฟล์คอนฟิกูเรชัน VSFTPd
+delete_del=การลบเซิร์ฟเวอร์เสมือน VSFTPd
+delete_gone=.. ไม่พบไฟล์กำหนดค่า!

@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=このドメインではVSFTPdサーバーが無効になります
+feat_disname=VSFTPd
+feat_label=VSFTPd仮想サーバーを有効にしますか？
+feat_label2=VSFTPd仮想サーバー
+feat_econf=VSFTPd構成ファイル $1は存在しません
+feat_edir=VSFTPd構成ディレクトリ $1は存在しません
+feat_edepvirt=プライベートIPアドレスを持たないサーバーではVSFTPdを有効にできません
+feat_clash=この仮想サーバーのVSFTPd構成ファイルは既に存在します
+feat_elisten=VSFTPdサーバーがスタンドアロンサーバーモードで実行するように構成されていない（ <tt>listen=YES</tt>ディレクティブを使用）
+feat_eaddress=VSFTPdサーバーのプライマリ構成は、（ <tt>listen_address=xxxx</tt>ディレクティブを介して）単一のIPアドレスのみをリッスンするように設定されていません。これは、Virtualminによってセットアップされた仮想FTPサーバーと競合しないようにするために必要です。
+feat_eproftpd=Virtualminの組み込みProFTPd機能と同時にVSFTPdを使用することはできません
+feat_backup=VSFTPd構成ファイルのバックアップ ..
+feat_nofile=..構成ファイルが見つかりません！
+feat_restore=VSFTPd構成ファイルの復元 ..
+feat_nocopy=..コピーに失敗しました！
+feat_backup_name=VSFTPd構成ファイル
+feat_evalidate=VSFTPd構成ファイル $1がありません
+feat_evalidateftp=匿名FTPディレクトリ $1は存在しません
+setup_add=VSFTPd仮想サーバーの追加 ..
+save_dom=VSFTPd構成ファイルの名前を変更しています ..
+save_ip=VSFTPd構成ファイルのIPアドレスを更新しています. ..
+save_home=VSFTPd構成ファイルのホームディレクトリを更新しています. ..
+delete_del=VSFTPd仮想サーバーを削除しています. ..
+delete_gone=..構成ファイルが見つかりませんでした！

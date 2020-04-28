@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=Šajā domēnā tiks atspējots VSFTPd serveris
+feat_disname=VSFTPd
+feat_label=Vai iespējot VSFTPd virtuālo serveri?
+feat_label2=VSFTPd virtuālais serveris
+feat_econf=VSFTPd konfigurācijas fails $1 neeksistē
+feat_edir=VSFTPd konfigurācijas direktorijs $1 neeksistē
+feat_edepvirt=VSFTPd nevar iespējot serveriem, kuriem nav privātas IP adreses
+feat_clash=Šim virtuālajam serverim jau pastāv VSFTPd konfigurācijas fails
+feat_elisten=Jūsu VSFTPd serveris nav konfigurēts, lai darbotos atsevišķa servera režīmā (izmantojot <tt>listen=YES</tt> direktīvu)
+feat_eaddress=Jūsu VSFTPd servera galvenā konfigurācija nav iestatīta, lai klausītos tikai vienā IP adresē (caur <tt>listen_address=xxxx</tt> direktīvu). Tas ir nepieciešams, lai novērstu tā sadursmi ar Virtualmin iestatījumiem virtuālajos FTP serveros
+feat_eproftpd=VSFTPd nevar izmantot vienlaikus ar Virtualmin iebūvēto ProFTPd funkciju
+feat_backup=VSFTPd konfigurācijas faila dublēšana.
+feat_nofile=.. Konfigurācijas fails nav atrasts.
+feat_restore=VSFTPd konfigurācijas faila atjaunošana.
+feat_nocopy=.. kopēt neizdevās
+feat_backup_name=VSFTPd konfigurācijas fails
+feat_evalidate=Trūkst VSFTPd konfigurācijas faila $1 
+feat_evalidateftp=Anonīms FTP direktorijs $1 neeksistē
+setup_add=Notiek VSFTPd virtuālā servera pievienošana.
+save_dom=VSFTPd konfigurācijas faila pārdēvēšana ..
+save_ip=IP adreses atjaunināšana VSFTPd konfigurācijas failā ..
+save_home=Mājas direktorijas atjaunināšana VSFTPd konfigurācijas failā.
+delete_del=Notiek VSFTPd virtuālā servera dzēšana.
+delete_gone=.. nevarēju atrast konfigurācijas failu!

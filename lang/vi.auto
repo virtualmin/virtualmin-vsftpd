@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=Máy chủ VSFTPd sẽ bị vô hiệu hóa cho miền này
+feat_disname=VSFTPd
+feat_label=Cho phép máy chủ ảo VSFTPd?
+feat_label2=Máy chủ ảo VSFTPd
+feat_econf=Tệp cấu hình VSFTPd $1 không tồn tại
+feat_edir=Thư mục cấu hình VSFTPd $1 không tồn tại
+feat_edepvirt=Không thể bật VSFTPd cho các máy chủ không có địa chỉ IP riêng
+feat_clash=Tệp cấu hình VSFTPd đã tồn tại cho máy chủ ảo này
+feat_elisten=Máy chủ VSFTPd của bạn không được định cấu hình để chạy ở chế độ máy chủ độc lập (thông qua lệnh <tt>listen=YES</tt> )
+feat_eaddress=Cấu hình chính của máy chủ VSFTPd của bạn không được thiết lập để chỉ nghe trên một địa chỉ IP duy nhất (thông qua chỉ thị <tt>listen_address=xxxx</tt> ). Điều này là cần thiết để ngăn chặn nó xung đột với thiết lập máy chủ FTP ảo của Virtualmin
+feat_eproftpd=Không thể sử dụng VSFTPd cùng lúc với tính năng ProFTPd tích hợp của Virtualmin
+feat_backup=Sao lưu tập tin cấu hình VSFTPd ..
+feat_nofile=.. không tìm thấy tập tin cấu hình!
+feat_restore=Khôi phục tập tin cấu hình VSFTPd ..
+feat_nocopy=.. sao chép thất bại!
+feat_backup_name=Tập tin cấu hình VSFTPd
+feat_evalidate=Thiếu tệp cấu hình VSFTPd $1 
+feat_evalidateftp=Thư mục FTP ẩn danh $1 không tồn tại
+setup_add=Thêm máy chủ ảo VSFTPd ..
+save_dom=Đổi tên tập tin cấu hình VSFTPd ..
+save_ip=Cập nhật địa chỉ IP trong tệp cấu hình VSFTPd ..
+save_home=Cập nhật thư mục chính trong tập tin cấu hình VSFTPd ..
+delete_del=Xóa máy chủ ảo VSFTPd ..
+delete_gone=.. không thể tìm thấy tập tin cấu hình!

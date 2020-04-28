@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=שרת VSFTPd יושבת עבור תחום זה
+feat_disname=VSFTPd
+feat_label=אפשר שרת וירטואלי VSFTPd?
+feat_label2=שרת וירטואלי VSFTPd
+feat_econf=קובץ התצורה VSFTPd $1 אינו קיים
+feat_edir=ספריית התצורה VSFTPd $1 אינה קיימת
+feat_edepvirt=לא ניתן להפעיל VSFTPd לשרתים שאין להם כתובת IP פרטית
+feat_clash=קיים כבר קובץ תצורה של VSFTPd עבור שרת וירטואלי זה
+feat_elisten=שרת ה- VSFTPd שלך אינו מוגדר לפעול במצב שרת עצמאי (באמצעות הוראות <tt>listen=YES</tt> )
+feat_eaddress=התצורה הראשית של שרת VSFTPd שלך אינה מוגדרת להאזנה רק בכתובת IP יחידה (באמצעות <tt>listen_address=xxxx</tt> ). זה נחוץ כדי למנוע את התנגשותו עם הגדרת שרתי ה- FTP הווירטואליים על ידי Virtualmin
+feat_eproftpd=לא ניתן להשתמש ב- VSFTPd בו זמנית עם תכונת ה- ProFTPd המובנית של Virtualmin
+feat_backup=גיבוי קובץ תצורת VSFTPd ..
+feat_nofile=.. לא נמצא קובץ תצורה!
+feat_restore=שחזור קובץ התצורה של VSFTPd ..
+feat_nocopy=.. העותק נכשל!
+feat_backup_name=קובץ תצורת VSFTPd
+feat_evalidate=קובץ התצורה VSFTPd $1 חסר
+feat_evalidateftp=ספריית FTP אנונימית $1 אינה קיימת
+setup_add=הוספת שרת וירטואלי VSFTPd ..
+save_dom=שינוי שם קובץ התצורה של VSFTPd ..
+save_ip=מעדכן כתובת IP בקובץ התצורה VSFTPd ..
+save_home=מעדכן את מדריך הבית בקובץ התצורה של VSFTPd ..
+delete_del=מוחק שרת וירטואלי VSFTPd ..
+delete_gone=.. לא מצאתי קובץ תצורה!

@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=Strežnik VSFTPd bo za to domeno onemogočen
+feat_disname=VSFTPd
+feat_label=Ali želite omogočiti virtualni strežnik VSFTPd?
+feat_label2=VSFTPd virtualni strežnik
+feat_econf=Konfiguracijska datoteka VSFTPd $1 ne obstaja
+feat_edir=Konfiguracijski imenik VSFTPd $1 ne obstaja
+feat_edepvirt=VSFTPd ni mogoče omogočiti za strežnike, ki nimajo zasebnega naslova IP
+feat_clash=Za ta virtualni strežnik že obstaja konfiguracijska datoteka VSFTPd
+feat_elisten=Vaš strežnik VSFTPd ni konfiguriran za delovanje v samostojnem načinu strežnika (prek direktive za <tt>listen=YES</tt> )
+feat_eaddress=Primarna konfiguracija vašega strežnika VSFTPd ni nastavljena tako, da posluša samo en naslov IP (prek direktive <tt>listen_address=xxxx</tt> ). To je potrebno, da se prepreči spopad z virtualnimi strežniki FTP, ki jih je Virtualmin nastavil
+feat_eproftpd=VSFTPd ni mogoče uporabiti hkrati s Virtualminovo vgrajeno funkcijo ProFTPd
+feat_backup=Varnostno kopiranje konfiguracijske datoteke VSFTPd ..
+feat_nofile=.. ni bilo najdene konfiguracijske datoteke!
+feat_restore=Obnovitev konfiguracijske datoteke VSFTPd ..
+feat_nocopy=.. kopiranje ni uspelo!
+feat_backup_name=VSFTPd konfiguracijska datoteka
+feat_evalidate=VSFTPd konfiguracijska datoteka $1 manjka
+feat_evalidateftp=Anonimni imenik FTP $1 ne obstaja
+setup_add=Dodajanje navideznega strežnika VSFTPd ..
+save_dom=Preimenovanje konfiguracijske datoteke VSFTPd ..
+save_ip=Posodobitev naslova IP v konfiguracijski datoteki VSFTPd ..
+save_home=Posodobitev domačega imenika v konfiguracijski datoteki VSFTPd ..
+delete_del=Brisanje virtualnega strežnika VSFTPd ..
+delete_gone=.. ni bilo mogoče najti konfiguracijske datoteke!

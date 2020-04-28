@@ -1,0 +1,25 @@
+feat_name=vsftpd
+feat_losing=VSFTPd-palvelin poistetaan käytöstä tällä verkkotunnuksella
+feat_disname=vsftpd
+feat_label=Ota VSFTPd-virtuaalipalvelin käyttöön?
+feat_label2=VSFTPd-virtuaalipalvelin
+feat_econf=VSFTPd-määritystiedostoa $1 ei ole
+feat_edir=VSFTPd-määrityshakemistoa $1 ei ole
+feat_edepvirt=VSFTPd: tä ei voi ottaa käyttöön palvelimilla, joilla ei ole yksityistä IP-osoitetta
+feat_clash=VSFTPd-määritystiedosto on jo olemassa tälle virtuaalipalvelimelle
+feat_elisten=VSFTPd-palvelinta ei ole määritetty toimimaan itsenäisessä palvelinmoodissa ( <tt>listen=YES</tt> -direktiivin kautta)
+feat_eaddress=VSFTPd-palvelimen ensisijaista kokoonpanoa ei ole määritetty kuuntelemaan vain yhtä IP-osoitetta ( <tt>listen_address=xxxx</tt> -direktiivin kautta). Tätä tarvitaan estämään sitä törmämästä Virtualminin määrittämiin virtuaalisiin FTP-palvelimiin
+feat_eproftpd=VSFTPd: tä ei voida käyttää samanaikaisesti Virtualminin sisäänrakennetun ProFTPd-ominaisuuden kanssa
+feat_backup=Varmuuskopioi VSFTPd-määritystiedostoa ..
+feat_nofile=.. asetustiedostoa ei löytynyt!
+feat_restore=VSFTPd-määritystiedoston palauttaminen ..
+feat_nocopy=.. kopiointi epäonnistui!
+feat_backup_name=VSFTPd-määritystiedosto
+feat_evalidate=VSFTPd-määritystiedosto $1 puuttuu
+feat_evalidateftp=Nimetöntä FTP-hakemistoa $1 ei ole
+setup_add=VSFTPd-virtuaalipalvelimen lisääminen ..
+save_dom=Nimeä VSFTPd-määritystiedosto uudelleen.
+save_ip=Päivitetään IP-osoitetta VSFTPd-määritystiedostossa ..
+save_home=Kotihakemiston päivitys VSFTPd-määritystiedostossa ..
+delete_del=Poistetaan VSFTPd-virtuaalipalvelinta ..
+delete_gone=.. ei löytänyt määritystiedostoa!

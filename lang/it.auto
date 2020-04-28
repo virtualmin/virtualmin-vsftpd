@@ -1,0 +1,25 @@
+feat_name=vsftpd
+feat_losing=Il server VSFTPd sarà disabilitato per questo dominio
+feat_disname=vsftpd
+feat_label=Abilitare il server virtuale VSFTPd?
+feat_label2=Server virtuale VSFTPd
+feat_econf=Il file di configurazione VSFTPd $1 non esiste
+feat_edir=La directory di configurazione VSFTPd $1 non esiste
+feat_edepvirt=VSFTPd non può essere abilitato per i server che non dispongono di un indirizzo IP privato
+feat_clash=Un file di configurazione VSFTPd esiste già per questo server virtuale
+feat_elisten=Il server VSFTPd non è configurato per l'esecuzione in modalità server autonoma (tramite la direttiva hear <tt>listen=YES</tt> )
+feat_eaddress=La configurazione principale del server VSFTPd non è impostata per l'ascolto su un solo indirizzo IP (tramite la direttiva <tt>listen_address=xxxx</tt> ). Questo è necessario per evitare che si scontrino con i server FTP virtuali configurati da Virtualmin
+feat_eproftpd=VSFTPd non può essere utilizzato contemporaneamente alla funzione ProFTPd integrata di Virtualmin
+feat_backup=Backup del file di configurazione VSFTPd ..
+feat_nofile=.. nessun file di configurazione trovato!
+feat_restore=Ripristino del file di configurazione VSFTPd.
+feat_nocopy=.. copia fallita!
+feat_backup_name=File di configurazione VSFTPd
+feat_evalidate=File di configurazione VSFTPd $1 mancante
+feat_evalidateftp=La directory FTP anonima $1 non esiste
+setup_add=Aggiunta del server virtuale VSFTPd ..
+save_dom=Rinominare il file di configurazione VSFTPd ..
+save_ip=Aggiornamento dell'indirizzo IP nel file di configurazione VSFTPd.
+save_home=Aggiornamento della home directory nel file di configurazione VSFTPd ..
+delete_del=Eliminazione del server virtuale VSFTPd ..
+delete_gone=.. impossibile trovare il file di configurazione!

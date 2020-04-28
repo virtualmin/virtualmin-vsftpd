@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=سرور VSFTPd برای این دامنه غیرفعال می شود
+feat_disname=VSFTPd
+feat_label=سرور مجازی VSFTPd را فعال کنید؟
+feat_label2=سرور مجازی VSFTPd
+feat_econf=پرونده پیکربندی VSFTPd $1 وجود ندارد
+feat_edir=فهرست پیکربندی VSFTPd $1 وجود ندارد
+feat_edepvirt=VSFTPd برای سرورهایی که آدرس IP خصوصی ندارند امکان پذیر نیست
+feat_clash=یک پرونده پیکربندی VSFTPd برای این سرور مجازی وجود دارد
+feat_elisten=سرور VSFTPd شما برای اجرای در حالت سرور مستقل تنظیم نشده است (از طریق بخشنامه <tt>listen=YES</tt> )
+feat_eaddress=تنظیمات اصلی سرور VSFTPd شما تنظیم نشده است که فقط در یک آدرس IP تنها گوش دهید (از طریق <tt>listen_address=xxxx</tt> ). این مورد برای جلوگیری از درگیری آن با سرورهای FTP مجازی تنظیم شده توسط Virtualmin مورد نیاز است
+feat_eproftpd=VSFTPd را نمی توان همزمان با ویژگی داخلی ProFTPd ساخته Virtualmin استفاده کرد
+feat_backup=تهیه نسخه پشتیبان از پرونده پیکربندی VSFTPd ..
+feat_nofile=.. هیچ پرونده پیکربندی یافت نشد!
+feat_restore=بازیابی فایل پیکربندی VSFTPd ..
+feat_nocopy=.. کپی نشد!
+feat_backup_name=پرونده پیکربندی VSFTPd
+feat_evalidate=پرونده پیکربندی VSFTPd $1 وجود ندارد
+feat_evalidateftp=پوشه ناشناس FTP $1 وجود ندارد
+setup_add=اضافه کردن سرور مجازی VSFTPd ..
+save_dom=تغییر نام پرونده پیکربندی VSFTPd ..
+save_ip=به روزرسانی آدرس IP در پرونده پیکربندی VSFTPd ..
+save_home=به روزرسانی فهرست اصلی در پرونده پیکربندی VSFTPd ..
+delete_del=حذف سرور مجازی VSFTPd ..
+delete_gone=.. نتوانستید پرونده پیکربندی را پیدا کنید!

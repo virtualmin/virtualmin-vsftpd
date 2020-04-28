@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=이 도메인에서 VSFTPd 서버를 사용할 수 없습니다.
+feat_disname=VSFTPd
+feat_label=VSFTPd 가상 서버를 사용 하시겠습니까?
+feat_label2=VSFTPd 가상 서버
+feat_econf=VSFTPd 구성 파일 $1 이 (가) 없습니다
+feat_edir=VSFTPd 구성 디렉토리 $1 이 (가) 없습니다
+feat_edepvirt=개인 IP 주소가없는 서버에는 VSFTPd를 사용할 수 없습니다
+feat_clash=이 가상 서버에 대한 VSFTPd 구성 파일이 이미 존재합니다
+feat_elisten=VSFTPd 서버가 독립형 서버 모드에서 실행되도록 구성되지 않았습니다 (listear <tt>listen=YES</tt> 지시문을 통해).
+feat_eaddress=VSFTPd 서버의 기본 구성은 <tt>listen_address=xxxx</tt> 지시문을 통해 단일 IP 주소에서만 수신하도록 설정되어 있지 않습니다. Virtualmin이 설정 한 가상 FTP 서버와 충돌하지 않도록하기 위해 필요합니다.
+feat_eproftpd=VSFTPd는 Virtualmin의 내장 ProFTPd 기능과 동시에 사용할 수 없습니다
+feat_backup=VSFTPd 구성 파일 백업 ..
+feat_nofile=.. 구성 파일을 찾을 수 없습니다!
+feat_restore=VSFTPd 구성 파일 복원 ..
+feat_nocopy=.. 복사 실패!
+feat_backup_name=VSFTPd 구성 파일
+feat_evalidate=VSFTPd 구성 파일 $1 이 (가) 없습니다
+feat_evalidateftp=익명 FTP 디렉토리 $1 이 (가) 없습니다
+setup_add=VSFTPd 가상 서버 추가 ..
+save_dom=VSFTPd 구성 파일 이름 바꾸기 ..
+save_ip=VSFTPd 구성 파일에서 IP 주소 업데이트 ..
+save_home=VSFTPd 구성 파일에서 홈 디렉토리 업데이트 ..
+delete_del=VSFTPd 가상 서버 삭제 ..
+delete_gone=.. 구성 파일을 찾을 수 없습니다!

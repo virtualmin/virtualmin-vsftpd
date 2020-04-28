@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=VSFTPd服務器將為此域禁用
+feat_disname=VSFTPd
+feat_label=啟用VSFTPd虛擬服務器？
+feat_label2=VSFTPd虛擬服務器
+feat_econf=VSFTPd配置文件 $1不存在
+feat_edir=VSFTPd配置目錄 $1不存在
+feat_edepvirt=無法為沒有專用IP地址的服務器啟用VSFTPd
+feat_clash=此虛擬服務器的VSFTPd配置文件已存在
+feat_elisten=VSFTPd服務器未配置為在獨立服務器模式下運行（通過<tt>listen=YES</tt>指令）
+feat_eaddress=VSFTPd服務器的主要配置未設置為僅偵聽單個IP地址（通過<tt>listen_address=xxxx</tt>指令）。需要這樣做以防止其與Virtualmin設置的虛擬FTP服務器衝突
+feat_eproftpd=VSFTPd不能與Virtualmin的內置ProFTPd功能同時使用
+feat_backup=備份VSFTPd配置文件 ..
+feat_nofile=..找不到配置文件！
+feat_restore=恢復VSFTPd配置文件 ..
+feat_nocopy=..複製失敗！
+feat_backup_name=VSFTPd配置文件
+feat_evalidate=VSFTPd配置文件 $1丟失
+feat_evalidateftp=匿名FTP目錄 $1不存在
+setup_add=添加VSFTPd虛擬服務器 ..
+save_dom=重命名VSFTPd配置文件 ..
+save_ip=正在VSFTPd配置文件中更新IP地址。
+save_home=在VSFTPd配置文件中更新主目錄。
+delete_del=刪除VSFTPd虛擬服務器 ..
+delete_gone=..找不到配置文件！

@@ -1,0 +1,25 @@
+feat_name=vsftpd
+feat_losing=Serverul VSFTPd va fi dezactivat pentru acest domeniu
+feat_disname=vsftpd
+feat_label=Activați serverul virtual VSFTPd?
+feat_label2=Server virtual VSFTPd
+feat_econf=Fișierul de configurare VSFTPd $1 nu există
+feat_edir=Directorul de configurare VSFTPd $1 nu există
+feat_edepvirt=VSFTPd nu poate fi activat pentru serverele care nu au o adresă IP privată
+feat_clash=Pentru acest server virtual există deja un fișier de configurare VSFTPd
+feat_elisten=Serverul dvs. VSFTPd nu este configurat să funcționeze în modul server de sine stătător (prin directiva <tt>listen=YES</tt> )
+feat_eaddress=Configurația principală a serverului dvs. VSFTPd nu este configurată pentru a asculta doar o singură adresă IP (prin directiva <tt>listen_address=xxxx</tt> ). Acest lucru este necesar pentru a împiedica oprirea sa cu setările serverelor FTP virtuale instalate de Virtualmin
+feat_eproftpd=VSFTPd nu poate fi utilizat în același timp cu funcția ProFTPd încorporată de Virtualmin
+feat_backup=Copie de rezervă a fișierului de configurare VSFTPd ..
+feat_nofile=.. nu a fost găsit niciun fișier de configurare!
+feat_restore=Restaurarea fișierului de configurare VSFTPd ..
+feat_nocopy=.. copia nu a reușit!
+feat_backup_name=Fișier de configurare VSFTPd
+feat_evalidate=Fișierul de configurare VSFTPd $1 lipsește
+feat_evalidateftp=Directorul FTP anonim $1 nu există
+setup_add=Adăugarea serverului virtual VSFTPd ..
+save_dom=Redenumirea fișierului de configurare VSFTPd ..
+save_ip=Actualizarea adresei IP în fișierul de configurare VSFTPd ..
+save_home=Actualizarea directorului de acasă în fișierul de configurare VSFTPd ..
+delete_del=Ștergerea serverului virtual VSFTPd ..
+delete_gone=.. nu a putut găsi fișierul de configurare!

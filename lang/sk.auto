@@ -1,0 +1,25 @@
+feat_name=vsftpd
+feat_losing=Server VSFTPd bude pre túto doménu zakázaný
+feat_disname=vsftpd
+feat_label=Povoliť virtuálny server VSFTPd?
+feat_label2=Virtuálny server VSFTPd
+feat_econf=Konfiguračný súbor VSFTPd $1 neexistuje
+feat_edir=Konfiguračný adresár VSFTPd $1 neexistuje
+feat_edepvirt=VSFTPd nemožno povoliť pre servery, ktoré nemajú súkromnú IP adresu
+feat_clash=Konfiguračný súbor VSFTPd už pre tento virtuálny server existuje
+feat_elisten=Váš server VSFTPd nie je nakonfigurovaný na spustenie v režime samostatného servera (prostredníctvom smernice <tt>listen=YES</tt> )
+feat_eaddress=Primárna konfigurácia servera VSFTPd nie je nastavená na počúvanie iba na jednej adrese IP (prostredníctvom smernice <tt>listen_address=xxxx</tt> ). Je to potrebné, aby sa zabránilo konfliktu s nastavením virtuálnych FTP serverov spoločnosťou Virtualmin
+feat_eproftpd=VSFTPd sa nedá použiť súčasne s vstavanou funkciou ProFTPd Virtualmin
+feat_backup=Zálohuje sa konfiguračný súbor VSFTPd ..
+feat_nofile=.. nenašiel sa žiadny konfiguračný súbor!
+feat_restore=Obnovuje sa konfiguračný súbor VSFTPd ..
+feat_nocopy=.. kópia zlyhala!
+feat_backup_name=Konfiguračný súbor VSFTPd
+feat_evalidate=Chýba konfiguračný súbor VSFTPd $1 
+feat_evalidateftp=Anonymný FTP adresár $1 neexistuje
+setup_add=Pridáva sa virtuálny server VSFTPd ..
+save_dom=Premenovanie konfiguračného súboru VSFTPd ..
+save_ip=Aktualizácia adresy IP v konfiguračnom súbore VSFTPd ..
+save_home=Aktualizácia domovského adresára v konfiguračnom súbore VSFTPd ..
+delete_del=Odstraňuje sa virtuálny server VSFTPd ..
+delete_gone=.. nemohol nájsť konfiguračný súbor!

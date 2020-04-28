@@ -1,0 +1,25 @@
+feat_name=vsftpd
+feat_losing=VSFTPd-servern kommer att inaktiveras för den här domänen
+feat_disname=vsftpd
+feat_label=Aktivera VSFTPd virtuell server?
+feat_label2=VSFTPd virtuell server
+feat_econf=VSFTPd-konfigurationsfilen $1 finns inte
+feat_edir=VSFTPd-konfigurationskatalogen $1 finns inte
+feat_edepvirt=VSFTPd kan inte aktiveras för servrar som inte har en privat IP-adress
+feat_clash=En VSFTPd-konfigurationsfil finns redan för den virtuella servern
+feat_elisten=Din VSFTPd-server är inte konfigurerad för att köra i fristående serverläge (via <tt>listen=YES</tt> direktivet)
+feat_eaddress=Din VSFTPd-servers primära konfiguration är inte inställd för att bara lyssna på en enda IP-adress (via <tt>listen_address=xxxx</tt> direktivet). Detta behövs för att förhindra att den kolliderar med den virtuella FTP-serverinställningen av Virtualmin
+feat_eproftpd=VSFTPd kan inte användas samtidigt som Virtualmins inbyggda ProFTPd-funktion
+feat_backup=Säkerhetskopierar VSFTPd-konfigurationsfil ..
+feat_nofile=.. ingen konfigurationsfil hittades!
+feat_restore=Återställer VSFTPd konfigurationsfil ..
+feat_nocopy=.. kopian misslyckades!
+feat_backup_name=VSFTPd-konfigurationsfil
+feat_evalidate=VSFTPd-konfigurationsfil $1 saknas
+feat_evalidateftp=Anonym FTP-katalog $1 finns inte
+setup_add=Lägger till VSFTPd virtuell server ..
+save_dom=Byt namn på VSFTPd-konfigurationsfil ..
+save_ip=Uppdaterar IP-adressen i VSFTPd-konfigurationsfilen ..
+save_home=Uppdaterar hemkatalogen i konfigurationsfilen VSFTPd ..
+delete_del=Ta bort VSFTPd virtuell server ..
+delete_gone=.. kunde inte hitta konfigurationsfilen!

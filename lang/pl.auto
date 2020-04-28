@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=Serwer VSFTPd zostanie wyłączony dla tej domeny
+feat_disname=VSFTPd
+feat_label=Włączyć serwer wirtualny VSFTPd?
+feat_label2=Serwer wirtualny VSFTPd
+feat_econf=Plik konfiguracyjny VSFTPd $1 nie istnieje
+feat_edir=Katalog konfiguracyjny VSFTPd $1 nie istnieje
+feat_edepvirt=Funkcji VSFTPd nie można włączyć dla serwerów, które nie mają prywatnego adresu IP
+feat_clash=Plik konfiguracyjny VSFTPd już istnieje dla tego serwera wirtualnego
+feat_elisten=Serwer VSFTPd nie jest skonfigurowany do działania w trybie serwera autonomicznego (za pośrednictwem dyrektywy <tt>listen=YES</tt> )
+feat_eaddress=Podstawowa konfiguracja serwera VSFTPd nie jest skonfigurowana do nasłuchiwania tylko na jednym adresie IP (za pomocą dyrektywy <tt>listen_address=xxxx</tt> ). Jest to potrzebne, aby zapobiec kolizji z konfiguracją wirtualnych serwerów FTP przez Virtualmin
+feat_eproftpd=VSFTPd nie może być używany jednocześnie z wbudowaną funkcją ProFTPd Virtualmin
+feat_backup=Tworzenie kopii zapasowej pliku konfiguracyjnego VSFTPd ..
+feat_nofile=.. nie znaleziono pliku konfiguracyjnego!
+feat_restore=Przywracanie pliku konfiguracyjnego VSFTPd ..
+feat_nocopy=.. kopiowanie nie powiodło się!
+feat_backup_name=Plik konfiguracyjny VSFTPd
+feat_evalidate=Brak pliku konfiguracyjnego VSFTPd $1 
+feat_evalidateftp=Anonimowy katalog FTP $1 nie istnieje
+setup_add=Dodawanie wirtualnego serwera VSFTPd ..
+save_dom=Zmiana nazwy pliku konfiguracyjnego VSFTPd ..
+save_ip=Aktualizowanie adresu IP w pliku konfiguracyjnym VSFTPd ..
+save_home=Aktualizowanie katalogu domowego w pliku konfiguracyjnym VSFTPd ..
+delete_del=Usuwanie wirtualnego serwera VSFTPd ..
+delete_gone=.. nie można znaleźć pliku konfiguracyjnego!

@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=Is-server VSFTPd se jkun diżattivat għal dan id-dominju
+feat_disname=VSFTPd
+feat_label=Tippermetti server virtwali VSFTPd?
+feat_label2=Server virtwali VSFTPd
+feat_econf=Il-fajl tal-konfigurazzjoni VSFTPd $1 ma jeżistix
+feat_edir=Id-direttorju tal-konfigurazzjoni VSFTPd $1 ma jeżistix
+feat_edepvirt=VSFTPd ma jistax ikun attivat għal servers li m'għandhomx indirizz IP privat
+feat_clash=Fajl ta 'konfigurazzjoni VSFTPd diġà jeżisti għal dan is-server virtwali
+feat_elisten=Is-server VSFTPd tiegħek mhux ikkonfigurat biex jaħdem f'servizz stand-alone (permezz tad-direttiva <tt>listen=YES</tt> )
+feat_eaddress=Il-konfigurazzjoni primarja tas-server VSFTPd tiegħek mhix issettjata biex tisma 'fuq indirizz IP wieħed biss (permezz tad-direttiva <tt>listen_address=xxxx</tt> ). Dan huwa meħtieġ biex ma jħallix li jaċċetta mas-servers virtwali FTP installati minn Virtualmin
+feat_eproftpd=VSFTPd ma jistax jintuża fl-istess ħin bħall-karatteristika ProFTPd integrata ta 'Virtualmin
+feat_backup=Appoġġ għall-fajl ta 'konfigurazzjoni VSFTPd ..
+feat_nofile=.. l-ebda fajl ta 'konfigurazzjoni ma nstab!
+feat_restore=Restawr tal-fajl tal-konfigurazzjoni VSFTPd ..
+feat_nocopy=.. Kopja fallew!
+feat_backup_name=Fajl konfigurazzjoni VSFTPd
+feat_evalidate=Fajl tal-konfigurazzjoni VSFTPd $1 huwa nieqes
+feat_evalidateftp=Direttorju anonimu FTP $1 ma jeżistix
+setup_add=Iż-żieda ta 'server virtwali VSFTPd ..
+save_dom=Semmi mill-ġdid il-fajl tal-konfigurazzjoni VSFTPd ..
+save_ip=Aġġornament ta 'l-indirizz IP fil-fajl tal-konfigurazzjoni VSFTPd ..
+save_home=Aġġornament tad-direttorju fid-dar fil-fajl tal-konfigurazzjoni VSFTPd ..
+delete_del=Tħassar server virtwali VSFTPd ..
+delete_gone=.. ma setgħetx issib fajl ta 'konfigurazzjoni!

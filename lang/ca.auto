@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=El servidor VSFTPd quedarà desactivat per a aquest domini
+feat_disname=VSFTPd
+feat_label=Habiliteu el servidor virtual VSFTPd?
+feat_label2=Servidor virtual VSFTPd
+feat_econf=El fitxer de configuració VSFTPd $1 no existeix
+feat_edir=El directori de configuració VSFTPd $1 no existeix
+feat_edepvirt=El VSFTPd no es pot habilitar per als servidors que no tinguin una adreça IP privada
+feat_clash=Ja existeix un fitxer de configuració VSFTPd per a aquest servidor virtual
+feat_elisten=El servidor VSFTPd no està configurat per funcionar en un servidor autònom (a través de la directiva <tt>listen=YES</tt> )
+feat_eaddress=La configuració principal del servidor VSFTPd no està configurada per escoltar només una adreça IP (mitjançant la directiva <tt>listen_address=xxxx</tt> ). Això és necessari per evitar que xoca amb la configuració de servidors FTP virtuals de Virtualmin
+feat_eproftpd=El VSFTPd no es pot utilitzar al mateix temps que la característica ProFTPd integrada de Virtualmin
+feat_backup=Còpia de seguretat del fitxer de configuració VSFTPd ..
+feat_nofile=.. No s'ha trobat cap fitxer de configuració.
+feat_restore=Restauració del fitxer de configuració de VSFTPd ..
+feat_nocopy=.. Ha fallat la còpia.
+feat_backup_name=Fitxer de configuració VSFTPd
+feat_evalidate=Falta el fitxer de configuració VSFTPd $1 
+feat_evalidateftp=El directori FTP anònim $1 no existeix
+setup_add=Addició del servidor virtual VSFTPd ..
+save_dom=Com canviar el nom del fitxer de configuració VSFTPd ..
+save_ip=Actualització de l'adreça IP al fitxer de configuració de VSFTPd ..
+save_home=Actualització del directori principal al fitxer de configuració de VSFTPd ..
+delete_del=Se suprimeix el servidor virtual VSFTPd ..
+delete_gone=.. No s'ha trobat el fitxer de configuració.

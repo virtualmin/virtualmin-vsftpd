@@ -7,8 +7,8 @@ feat_econf=The VSFTPd configuration file $1 does not exist
 feat_edir=The VSFTPd configuration directory $1 does not exist
 feat_edepvirt=VSFTPd cannot be enabled for servers that do not have a private IP address
 feat_clash=A VSFTPd configuration file already exists for this virtual server
-feat_elisten=Your VSFTPd server is not configured to run in stand-alone server mode (via the listen=YES directive)
-feat_eaddress=Your VSFTPd server's primary configuration is not setup to listen on only a single IP address (via the listen_address=x.x.x.x directive). This is needed to prevent it from clashing with the virtual FTP servers setup by Virtualmin
+feat_elisten=Your VSFTPd server is not configured to run in stand-alone server mode (via the <tt>listen=YES</tt> directive)
+feat_eaddress=Your VSFTPd server's primary configuration is not setup to listen on only a single IP address (via the <tt>listen_address=x.x.x.x</tt> directive). This is needed to prevent it from clashing with the virtual FTP servers setup by Virtualmin
 feat_eproftpd=VSFTPd cannot be used at the same time as Virtualmin's built-in ProFTPd feature
 feat_backup=Backing up VSFTPd configuration file ..
 feat_nofile=.. no configuration file found!

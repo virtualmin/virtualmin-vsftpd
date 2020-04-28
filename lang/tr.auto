@@ -1,0 +1,25 @@
+feat_name=vSFTPD
+feat_losing=VSFTPd sunucusu bu etki alanı için devre dışı bırakılacak
+feat_disname=vSFTPD
+feat_label=VSFTPd sanal sunucusu etkinleştirilsin mi?
+feat_label2=VSFTPd sanal sunucusu
+feat_econf=$1 VSFTPd yapılandırma dosyası mevcut değil
+feat_edir=$1 VSFTPd yapılandırma dizini mevcut değil
+feat_edepvirt=Özel IP adresi olmayan sunucular için VSFTPd etkinleştirilemez
+feat_clash=Bu sanal sunucu için bir VSFTPd yapılandırma dosyası zaten var
+feat_elisten=VSFTPd sunucunuz tek başına sunucu modunda çalışacak şekilde yapılandırılmamış ( <tt>listen=YES</tt> yönergesi aracılığıyla)
+feat_eaddress=VSFTPd sunucunuzun birincil yapılandırması yalnızca tek bir IP adresini dinleyecek şekilde ayarlanmamıştır ( <tt>listen_address=xxxx</tt> yönergesi aracılığıyla). Bu, Virtualmin'in sanal FTP sunucuları kurulumuyla çakışmasını önlemek için gereklidir
+feat_eproftpd=VSFTPd, Virtualmin'in yerleşik ProFTPd özelliğiyle aynı anda kullanılamaz
+feat_backup=VSFTPd yapılandırma dosyası yedekleniyor ..
+feat_nofile=.. yapılandırma dosyası bulunamadı!
+feat_restore=VSFTPd yapılandırma dosyasını geri yükleme.
+feat_nocopy=.. kopyalama başarısız!
+feat_backup_name=VSFTPd yapılandırma dosyası
+feat_evalidate=$1 VSFTPd yapılandırma dosyası eksik
+feat_evalidateftp=$1 adsız FTP dizini mevcut değil
+setup_add=VSFTPd sanal sunucusu ekleniyor ..
+save_dom=VSFTPd yapılandırma dosyası yeniden adlandırılıyor.
+save_ip=VSFTPd yapılandırma dosyasında IP adresi güncelleniyor.
+save_home=VSFTPd yapılandırma dosyasında giriş dizini güncelleniyor.
+delete_del=VSFTPd sanal sunucusu siliniyor ..
+delete_gone=.. yapılandırma dosyası bulunamadı!

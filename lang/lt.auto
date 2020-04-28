@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=Šiame domene VSFTPd serveris bus išjungtas
+feat_disname=VSFTPd
+feat_label=Įgalinti VSFTPd virtualų serverį?
+feat_label2=VSFTPd virtualus serveris
+feat_econf=VSFTPd konfigūracijos failas $1 neegzistuoja
+feat_edir=VSFTPd konfigūracijos katalogo $1 nėra
+feat_edepvirt=VSFTPd negalima įgalinti serveriuose, kurie neturi privataus IP adreso
+feat_clash=Šiam virtualiam serveriui jau yra VSFTPd konfigūracijos failas
+feat_elisten=Jūsų VSFTPd serveris nėra sukonfigūruotas veikti autonominio serverio režimu (per „ <tt>listen=YES</tt> direktyvą)
+feat_eaddress=Pagrindinė jūsų VSFTPd serverio konfigūracija nėra nustatyta taip, kad būtų klausomasi tik vienu IP adresu (per „ <tt>listen_address=xxxx</tt> direktyvą). Tai reikalinga norint išvengti susidūrimo su virtualiais FTP serveriais, kuriuos nustato „Virtualmin“
+feat_eproftpd=VSFTPd negali būti naudojamas tuo pačiu metu su „Virtualmin“ integruota „ProFTPd“ funkcija
+feat_backup=VSFTPd konfigūracijos failo atsarginę kopiją ..
+feat_nofile=.. nerastas konfigūracijos failas
+feat_restore=Atkuriamas VSFTPd konfigūracijos failas.
+feat_nocopy=.. nukopijuoti nepavyko!
+feat_backup_name=VSFTPd konfigūracijos failas
+feat_evalidate=Trūksta VSFTPd konfigūracijos failo $1 
+feat_evalidateftp=Anoniminis FTP katalogas $1 neegzistuoja
+setup_add=Pridedamas virtualus serveris VSFTPd ..
+save_dom=Pervardijamas VSFTPd konfigūracijos failas ..
+save_ip=IP adreso atnaujinimas VSFTPd konfigūracijos faile ..
+save_home=Atnaujinamas namų katalogas VSFTPd konfigūracijos faile ..
+delete_del=Ištrinamas virtualus VSFTPd serveris.
+delete_gone=.. nepavyko rasti konfigūracijos failo!

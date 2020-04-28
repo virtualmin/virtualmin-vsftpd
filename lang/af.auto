@@ -1,0 +1,25 @@
+feat_name=vsftpd
+feat_losing=Die VSFTPd-bediener sal vir hierdie domein gedeaktiveer word
+feat_disname=vsftpd
+feat_label=Aktiveer VSFTPd virtuele bediener?
+feat_label2=VSFTPd virtuele bediener
+feat_econf=Die VSFTPd-konfigurasielêer $1 bestaan nie
+feat_edir=Die VSFTPd-konfigurasiegids $1 bestaan nie
+feat_edepvirt=VSFTPd kan nie geaktiveer word vir bedieners wat nie 'n private IP-adres het nie
+feat_clash='N VSFTPd-konfigurasielêer bestaan reeds vir hierdie virtuele bediener
+feat_elisten=U VSFTPd-bediener is nie opgestel om in alleenstaande bediener af te werk nie (via die <tt>listen=YES</tt> richtlijn)
+feat_eaddress=Die primêre konfigurasie van u VSFTPd-bediener is nie opgestel om slegs op 'n enkele IP-adres te luister nie (via die <tt>listen_address=xxxx</tt> richtlijn). Dit is nodig om te voorkom dat dit bots met die virtuele FTP-bedieners wat deur Virtualmin opgestel word
+feat_eproftpd=VSFTPd kan nie terselfdertyd as die ingeboude ProFTPd-funksie van Virtualmin gebruik word nie
+feat_backup=Rugsteun van VSFTPd-konfigurasielêer ..
+feat_nofile=.. geen konfigurasielêer gevind nie!
+feat_restore=Herstel VSFTPd-konfigurasielêer ..
+feat_nocopy=.. kopie misluk!
+feat_backup_name=VSFTPd-konfigurasielêer
+feat_evalidate=VSFTPd-konfigurasielêer $1 ontbreek
+feat_evalidateftp=Anonieme FTP-gids $1 bestaan nie
+setup_add=Voeg VSFTPd virtuele bediener by
+save_dom=Herbenoem die VSFTPd-konfigurasielêer ..
+save_ip=Dateer IP-adres op in die VSFTPd-konfigurasielêer ..
+save_home=Opdatering van die tuisgids in die VSFTPd-konfigurasielêer ..
+delete_del=Vee VSFTPd virtuele bediener uit ..
+delete_gone=.. kon geen konfigurasielêer vind nie!

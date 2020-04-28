@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=VSFTPd سرور کو اس ڈومین کیلئے غیر فعال کردیا جائے گا
+feat_disname=VSFTPd
+feat_label=VSFTPd ورچوئل سرور کو فعال کریں؟
+feat_label2=VSFTPd ورچوئل سرور
+feat_econf=VSFTPd تشکیل فائل$1 موجود نہیں ہے
+feat_edir=VSFTPd کنفگریشن ڈائریکٹری$1 موجود نہیں ہے
+feat_edepvirt=VSFTPd ان سرورز کے لئے اہل نہیں ہوسکتا ہے جن کے پاس نجی IP پتہ نہیں ہے
+feat_clash=اس ورچوئل سرور کیلئے VSFTPd تشکیل فائل پہلے سے موجود ہے
+feat_elisten=Your VSFTPd server is not configured to run in stand-alone server mode (via the <tt>listen=YES</tt> directive)
+feat_eaddress=Your VSFTPd server's primary configuration is not setup to listen on only a single IP address (via the <tt>listen_address=x.x.x.x</tt> directive). This is needed to prevent it from clashing with the virtual FTP servers setup by Virtualmin
+feat_eproftpd=ورچوئل مین کی بلٹ ان پرو ایف ٹی پی ڈی خصوصیت کی طرح وی ایس ایف ٹی پی ڈی کو بیک وقت استعمال نہیں کیا جاسکتا ہے
+feat_backup=VSFTPd تشکیل فائل کا بیک اپ لیا جا رہا ہے ..
+feat_nofile=.. کوئی تشکیل فائل نہیں ملی!
+feat_restore=VSFTPd کنفگریشن فائل کی بحالی ..
+feat_nocopy=.. کاپی ناکام!
+feat_backup_name=VSFTPd تشکیل فائل
+feat_evalidate=VSFTPd کنفگریشن فائل$1 غائب ہے
+feat_evalidateftp=گمنام FTP ڈائریکٹری$1 موجود نہیں ہے
+setup_add=VSFTPd ورچوئل سرور شامل کرنا ..
+save_dom=VSFTPd تشکیل فائل کا نام تبدیل کرنا ..
+save_ip=VSFTPd تشکیل فائل میں IP پتے کی تازہ کاری ..
+save_home=VSFTPd کنفگریشن فائل میں ہوم ڈائرکٹری کو اپ ڈیٹ کرنا ..
+delete_del=VSFTPd ورچوئل سرور کو حذف کیا جارہا ہے ..
+delete_gone=.. تشکیل فائل نہیں مل سکی!

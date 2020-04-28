@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=Der VSFTPd-Server wird für diese Domäne deaktiviert
+feat_disname=VSFTPd
+feat_label=Virtuellen VSFTPd-Server aktivieren?
+feat_label2=Virtueller VSFTPd-Server
+feat_econf=Die VSFTPd-Konfigurationsdatei $1 ist nicht vorhanden
+feat_edir=Das VSFTPd-Konfigurationsverzeichnis $1 ist nicht vorhanden
+feat_edepvirt=VSFTPd kann nicht für Server aktiviert werden, die keine private IP-Adresse haben
+feat_clash=Für diesen virtuellen Server ist bereits eine VSFTPd-Konfigurationsdatei vorhanden
+feat_elisten=Ihr VSFTPd-Server ist nicht für die Ausführung im eigenständigen Servermodus konfiguriert (über die Direktive <tt>listen=YES</tt> ).
+feat_eaddress=Die Primärkonfiguration Ihres VSFTPd-Servers ist nicht so eingerichtet, dass nur eine einzige IP-Adresse <tt>listen_address=xxxx</tt> (über die <tt>listen_address=xxxx</tt> ). Dies ist erforderlich, um zu verhindern, dass Konflikte mit den von Virtualmin eingerichteten virtuellen FTP-Servern auftreten
+feat_eproftpd=VSFTPd kann nicht gleichzeitig mit der in Virtualmin integrierten ProFTPd-Funktion verwendet werden
+feat_backup=Sichern der VSFTPd-Konfigurationsdatei.
+feat_nofile=.. keine Konfigurationsdatei gefunden!
+feat_restore=Wiederherstellen der VSFTPd-Konfigurationsdatei.
+feat_nocopy=.. Kopie fehlgeschlagen!
+feat_backup_name=VSFTPd-Konfigurationsdatei
+feat_evalidate=Die VSFTPd-Konfigurationsdatei $1 fehlt
+feat_evalidateftp=Anonymes FTP-Verzeichnis $1 existiert nicht
+setup_add=Hinzufügen eines virtuellen VSFTPd-Servers.
+save_dom=Umbenennen der VSFTPd-Konfigurationsdatei.
+save_ip=Aktualisieren der IP-Adresse in der VSFTPd-Konfigurationsdatei.
+save_home=Aktualisieren des Ausgangsverzeichnisses in der VSFTPd-Konfigurationsdatei.
+delete_del=Löschen des virtuellen VSFTPd-Servers.
+delete_gone=.. konnte Konfigurationsdatei nicht finden!

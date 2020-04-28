@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=VSFTPd zerbitzaria ezgaituta egongo da domeinu honetarako
+feat_disname=VSFTPd
+feat_label=Gaitu VSFTPd zerbitzari birtuala?
+feat_label2=VSFTPd zerbitzari birtuala
+feat_econf=$1 VSFTPd konfigurazio fitxategia ez da existitzen
+feat_edir=Ez da VSFTPd konfigurazio%% direktoriorik
+feat_edepvirt=VSFTPd ezin da gaitu IP helbide pribaturik ez duten zerbitzarientzako
+feat_clash=VSFTPd konfigurazio fitxategia dagoeneko zerbitzari birtual honetarako
+feat_elisten=Zure VSFTPd zerbitzaria ez dago konfiguratuta zerbitzari bakarrean jokatzeko ( <tt>listen=YES</tt> zuzentarauaren bidez)
+feat_eaddress=Zure VSFTPd zerbitzariaren konfigurazio nagusia ez dago konfiguratuta IP helbide bakarra entzuteko ( <tt>listen_address=xxxx</tt> zuzentarauaren bidez). Hori beharrezkoa da Virtualmin-ek konfiguratutako FTP zerbitzari birtualekin talka egitea ekiditeko
+feat_eproftpd=VSFTPd ezin da erabili Virtualmin-en ProFTPd funtzioarekin integratuta
+feat_backup=VSFTPd konfigurazio fitxategiaren babeskopia ..
+feat_nofile=.. konfigurazio fitxategirik ez da aurkitu!
+feat_restore=VSFTPd konfigurazio fitxategia leheneratzen du ..
+feat_nocopy=.. kopiak huts egin du!
+feat_backup_name=VSFTPd konfigurazio fitxategia
+feat_evalidate=VSFTPd $1 konfigurazio fitxategia falta da
+feat_evalidateftp=$1 FTP direktorio anonimorik ez dago
+setup_add=VSFTPd zerbitzari birtuala gehitzen ..
+save_dom=VSFTPd konfigurazio fitxategia berrizendatu ..
+save_ip=IP helbidea eguneratzea VSFTPd konfigurazio fitxategian ..
+save_home=Etxeko direktorio eguneratzea VSFTPd konfigurazio fitxategian ..
+delete_del=VSFTPd zerbitzari birtuala ezabatzen ..
+delete_gone=.. ezin da konfigurazio fitxategia aurkitu.

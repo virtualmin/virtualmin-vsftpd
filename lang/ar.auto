@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=سيتم تعطيل خادم VSFTPd لهذا المجال
+feat_disname=VSFTPd
+feat_label=تمكين خادم VSFTPd الظاهري؟
+feat_label2=خادم VSFTPd الظاهري
+feat_econf=ملف تكوين VSFTPd $1 غير موجود
+feat_edir=دليل تكوين VSFTPd $1 غير موجود
+feat_edepvirt=لا يمكن تمكين VSFTPd للخوادم التي ليس لها عنوان IP خاص
+feat_clash=يوجد بالفعل ملف تكوين VSFTPd لهذا الخادم الظاهري
+feat_elisten=لم يتم تكوين خادم VSFTPd الخاص بك ليعمل في وضع الخادم المستقل (عبر <tt>listen=YES</tt> توجيه <tt>listen=YES</tt> )
+feat_eaddress=لم يتم إعداد التكوين الأساسي لخادم VSFTPd الخاص بك للاستماع على عنوان IP واحد فقط (عبر الأمر <tt>listen_address=xxxx</tt> ). هذا مطلوب لمنعه من الاصطدام مع إعداد خوادم FTP الظاهرية بواسطة Virtualmin
+feat_eproftpd=لا يمكن استخدام VSFTPd في نفس وقت استخدام ميزة ProFTPd المضمنة في Virtualmin
+feat_backup=النسخ الاحتياطي لملف تكوين VSFTPd ..
+feat_nofile=.. لم يتم العثور على ملف التكوين!
+feat_restore=استعادة ملف تكوين VSFTPd ..
+feat_nocopy=.. فشل النسخ!
+feat_backup_name=ملف تكوين VSFTPd
+feat_evalidate=ملف تكوين VSFTPd $1 مفقود
+feat_evalidateftp=دليل FTP المجهول$1 غير موجود
+setup_add=إضافة خادم VSFTPd الظاهري ..
+save_dom=إعادة تسمية ملف تكوين VSFTPd ..
+save_ip=تحديث عنوان IP في ملف تكوين VSFTPd ..
+save_home=تحديث الدليل الرئيسي في ملف تكوين VSFTPd ..
+delete_del=حذف خادم VSFTPd الظاهري ..
+delete_gone=.. لا يمكن العثور على ملف التكوين!

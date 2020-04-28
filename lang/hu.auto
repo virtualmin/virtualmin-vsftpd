@@ -1,0 +1,25 @@
+feat_name=vsftpd
+feat_losing=A VSFTPd szervert letiltjuk ebben a tartományban
+feat_disname=vsftpd
+feat_label=Engedélyezi a VSFTPd virtuális szervert?
+feat_label2=VSFTPd virtuális szerver
+feat_econf=A (z) $1 VSFTPd konfigurációs fájl nem létezik
+feat_edir=A (z) $1 VSFTPd konfigurációs könyvtár nem létezik
+feat_edepvirt=A VSFTPd nem engedélyezhető olyan kiszolgálók számára, amelyek nem rendelkeznek saját IP-címmel
+feat_clash=Ehhez a virtuális kiszolgálóhoz már létezik egy VSFTPd konfigurációs fájl
+feat_elisten=A VSFTPd szerver nincs konfigurálva önálló szerver üzemmódban történő futtatáshoz (a <tt>listen=YES</tt> irányelv segítségével)
+feat_eaddress=A VSFTPd szerver elsődleges konfigurációja nincs beállítva, hogy csak egyetlen IP címet hallgasson (a <tt>listen_address=xxxx</tt> irányelv útján). Erre azért van szükség, hogy ne ütközzen a Virtualmin által beállított virtuális FTP-kiszolgálókkal
+feat_eproftpd=A VSFTPd nem használható egyszerre a Virtualmin beépített ProFTPd szolgáltatásával
+feat_backup=A VSFTPd konfigurációs fájl biztonsági mentése.
+feat_nofile=.. nem található konfigurációs fájl!
+feat_restore=A VSFTPd konfigurációs fájl helyreállítása ..
+feat_nocopy=.. a másolás sikertelen!
+feat_backup_name=VSFTPd konfigurációs fájl
+feat_evalidate=Hiányzik a (z) $1 VSFTPd konfigurációs fájl
+feat_evalidateftp=A (1) névtelen FTP könyvtár nem létezik
+setup_add=VSFTPd virtuális szerver hozzáadása ..
+save_dom=A VSFTPd konfigurációs fájl átnevezése ..
+save_ip=IP-cím frissítése a VSFTPd konfigurációs fájlban.
+save_home=Az otthoni könyvtár frissítése a VSFTPd konfigurációs fájlban.
+delete_del=A VSFTPd virtuális szerver törlése ..
+delete_gone=.. nem található a konfigurációs fájl!

@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=Pelayan VSFTPd akan dilumpuhkan untuk domain ini
+feat_disname=VSFTPd
+feat_label=Dayakan pelayan maya VSFTPd?
+feat_label2=Pelayan maya VSFTPd
+feat_econf=Fail konfigurasi VSFTPd $1 tidak wujud
+feat_edir=Direktori konfigurasi VSFTPd $1 tidak ada
+feat_edepvirt=VSFTPd tidak dapat diaktifkan untuk pelayan yang tidak mempunyai alamat IP peribadi
+feat_clash=Fail konfigurasi VSFTPd sudah ada untuk pelayan maya ini
+feat_elisten=Pelayan VSFTPd anda tidak dikonfigurasikan untuk berjalan dalam mod pelayan yang berdiri sendiri (melalui arahan <tt>listen=YES</tt> )
+feat_eaddress=Konfigurasi utama pelayan VSFTPd anda tidak disiapkan untuk mendengar hanya pada satu alamat IP (melalui arahan <tt>listen_address=xxxx</tt> ). Ini diperlukan untuk mengelakkannya bertembung dengan penyediaan pelayan FTP maya oleh Virtualmin
+feat_eproftpd=VSFTPd tidak dapat digunakan bersamaan dengan fitur ProFTPd bawaan Virtualmin
+feat_backup=Menyandarkan fail konfigurasi VSFTPd ..
+feat_nofile=.. tiada fail konfigurasi dijumpai!
+feat_restore=Memulihkan fail konfigurasi VSFTPd ..
+feat_nocopy=.. salinan gagal!
+feat_backup_name=Fail konfigurasi VSFTPd
+feat_evalidate=Fail konfigurasi VSFTPd $1 tiada
+feat_evalidateftp=Direktori FTP tanpa nama $1 tidak wujud
+setup_add=Menambah pelayan maya VSFTPd ..
+save_dom=Menamakan semula fail konfigurasi VSFTPd ..
+save_ip=Mengemas kini alamat IP dalam fail konfigurasi VSFTPd ..
+save_home=Mengemas kini direktori utama dalam fail konfigurasi VSFTPd ..
+delete_del=Memadamkan pelayan maya VSFTPd ..
+delete_gone=.. tidak dapat mencari fail konfigurasi!

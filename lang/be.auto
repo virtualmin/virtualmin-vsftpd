@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=Сервер VSFTPd будзе адключаны для гэтага дамена
+feat_disname=VSFTPd
+feat_label=Уключыць віртуальны сервер VSFTPd?
+feat_label2=Віртуальны сервер VSFTPd
+feat_econf=Файл канфігурацыі VSFTPd $1 не існуе
+feat_edir=Каталог канфігурацыі VSFTPd $1 не існуе
+feat_edepvirt=VSFTPd нельга ўключыць для сервераў, якія не маюць прыватнага IP-адраса
+feat_clash=Для гэтага віртуальнага сервера ўжо існуе файл канфігурацыі VSFTPd
+feat_elisten=Ваш сервер VSFTPd не настроены для працы ў аўтаномным рэжыме сервера (праз дырэктыву <tt>listen=YES</tt> )
+feat_eaddress=Асноўная канфігурацыя сервера VSFTPd не ўсталявана для праслухоўвання толькі аднаго IP-адраса (праз дырэктыву <tt>listen_address=xxxx</tt> ). Гэта неабходна для прадухілення сутыкнення з віртуальным FTP-серверам, усталяваным Virtualmin
+feat_eproftpd=VSFTPd нельга выкарыстоўваць адначасова з убудаванай функцыяй ProFTPd Virtualmin
+feat_backup=Рэзервовае капіраванне файла канфігурацыі VSFTPd ..
+feat_nofile=.. не знайдзены файл канфігурацыі!
+feat_restore=Аднаўленне файла канфігурацыі VSFTPd ..
+feat_nocopy=.. копія не атрымалася!
+feat_backup_name=Файл канфігурацыі VSFTPd
+feat_evalidate=Файл канфігурацыі VSFTPd $1 адсутнічае
+feat_evalidateftp=Ананімны каталог FTP $1 не існуе
+setup_add=Даданне віртуальнага сервера VSFTPd ..
+save_dom=Перайменаванне файла канфігурацыі VSFTPd ..
+save_ip=Абнаўленне IP-адраса ў файле канфігурацыі VSFTPd ..
+save_home=Абнаўленне хатняга каталога ў файле канфігурацыі VSFTPd ..
+delete_del=Выдаленне віртуальнага сервера VSFTPd ..
+delete_gone=.. не ўдалося знайсці файл канфігурацыі!

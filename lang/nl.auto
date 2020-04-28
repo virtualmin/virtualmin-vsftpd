@@ -1,0 +1,25 @@
+feat_name=VSFTPd
+feat_losing=De VSFTPd-server wordt uitgeschakeld voor dit domein
+feat_disname=VSFTPd
+feat_label=VSFTPd virtuele server inschakelen?
+feat_label2=VSFTPd virtuele server
+feat_econf=Het VSFTPd-configuratiebestand $1 bestaat niet
+feat_edir=De VSFTPd-configuratiemap $1 bestaat niet
+feat_edepvirt=VSFTPd kan niet worden ingeschakeld voor servers die geen privé IP-adres hebben
+feat_clash=Er bestaat al een VSFTPd-configuratiebestand voor deze virtuele server
+feat_elisten=Uw VSFTPd-server is niet geconfigureerd om te werken in de stand-alone servermodus (via de <tt>listen=YES</tt> richtlijn)
+feat_eaddress=De primaire configuratie van uw VSFTPd-server is niet ingesteld om op slechts één IP-adres te luisteren (via de richtlijn <tt>listen_address=xxxx</tt> ). Dit is nodig om te voorkomen dat het botst met de virtuele FTP-servers die door Virtualmin zijn ingesteld
+feat_eproftpd=VSFTPd kan niet tegelijkertijd met Virtualmin's ingebouwde ProFTPd-functie worden gebruikt
+feat_backup=Een back-up maken van het VSFTPd-configuratiebestand.
+feat_nofile=.. geen configuratiebestand gevonden!
+feat_restore=VSFTPd-configuratiebestand herstellen. ..
+feat_nocopy=.. kopiëren is mislukt!
+feat_backup_name=VSFTPd-configuratiebestand
+feat_evalidate=VSFTPd-configuratiebestand $1 ontbreekt
+feat_evalidateftp=Anonieme FTP-map $1 bestaat niet
+setup_add=VSFTPd virtuele server toevoegen. ..
+save_dom=De naam van het VSFTPd-configuratiebestand wijzigen.
+save_ip=IP-adres bijwerken in VSFTPd-configuratiebestand.
+save_home=Thuismap bijwerken in VSFTPd-configuratiebestand.
+delete_del=VSFTPd virtuele server verwijderen.
+delete_gone=.. kon configuratiebestand niet vinden!
